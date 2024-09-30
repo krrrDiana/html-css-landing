@@ -1,0 +1,240 @@
+body {  
+    font-family: Arial, sans-serif;  
+    left: 186px;
+    margin: 0;  
+    padding: 0; 
+    display: flex;  
+    flex-direction: column;  
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(253, 91, 118) 50%, #ffffff 50%);
+}  
+
+header {  
+    font-family: 'Nunito';
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;    
+    padding: 20px;  
+}  
+
+.logo {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-left: 100px;
+}
+
+nav ul {  
+    list-style: none;  
+    display: flex;  
+    gap: 20px;  
+    display: flex; 
+    align-items: center; 
+    font-size: 18px;
+}  
+
+nav a {  
+    text-decoration: none;  
+    color: #000;  
+}  
+
+.bold-text {
+    font-weight: bolder;
+    font-size: 24px;
+    text-decoration: none; 
+    color: #000;
+}
+
+.btn1 {
+    font-weight: 700px;
+    line-height: 34.1px;
+    width: 100px;
+    height: 41px;
+    top: 544px;
+    left: 186px;
+    border-radius: 5px;  
+    border: 2px solid #3A86FF; 
+    background-color: #fff;  
+    color: #3A86FF; 
+    font-size: 19px;
+}
+
+.btn2 {
+    font-weight: 700;
+    line-height: 34.1px;
+    width: 100px;
+    height: 41px;
+    top: 544px;
+    left: 186px;
+    border-radius: 5px;  
+    background-color: #3A86FF;  
+    color: #fff; 
+    font-size: 19px;
+}
+
+.btn1:hover {
+    background-color: #0056b3;
+    color: #fff; 
+    transform: scale(1.1);
+}
+
+.btn2:hover {
+    background-color: #0056b3; 
+    color: #fff; 
+    transform: scale(1.1);
+}
+ 
+main {  
+    display: flex;  
+    flex: 1;  
+    height: 100vh; 
+    padding: 40px;  
+    margin-left: 90px;
+} 
+
+h1 {  
+    font-family: 'Nunito';
+    font-weight: 800;
+    size: 60px;
+    width: 643px;
+    height: 82px;
+    color: #000;
+    font-size: 48px;
+    margin-bottom: 10px; 
+}  
+
+p {  
+    font-family: 'Nunito';
+    font-weight: 400;
+    width: 556px;
+    height: 120px;
+    line-height: 40px;
+    color: #000000;
+    letter-spacing: 5%;
+    flex: 1; 
+    font-size: 18px;
+    margin-bottom: 40px; 
+}  
+
+.buttons {  
+    font-family: 'Nunito';
+    size: 250px;
+    width: 297px;
+    height: 34px;
+    top: 577px;
+    left: 212px;
+    line-height: 34.1px;
+    color: #FFFFFF;    
+    display: flex;  
+    gap: 10px;
+}  
+
+button {  
+    border: none;  
+    cursor: pointer;  
+    color: #3A86FF;
+    width: 323px;
+    height: 51px;
+    top: 544px;
+    left: 186px;
+    border-radius: 5px;  
+}  
+
+.btn-get-started {  
+    font-family: 'Nunito';
+    font-weight: 700;
+    size: 25px;
+    line-height: 34.1px;
+    width: 393px;
+    height: 51px;
+    top: 544px;
+    left: 186px;
+    border-radius: 5px;  
+    background-color: #3A86FF;  
+    color: #fff; 
+    font-size: 14px;
+}  
+
+.btn-get-started:hover {
+    background-color: #0056b3; 
+    color: #fff; 
+    border: 2px solid #0056b3; 
+    transform: scale(1.1);
+}
+
+.btn-call-now {  
+    font-family: 'Nunito';
+    font-weight: 700;
+    size: 25px;
+    line-height: 34.1px;
+    border-radius: 5px;  
+    width: 393px;
+    background-color: #fff;  
+    border: 2px solid #3A86FF;  
+    color: #3A86FF;  
+    font-size: 14px;
+}  
+
+.btn-call-now:hover {
+    background-color: #0056b3; 
+    color: #fff; 
+    border: 2px solid #0056b3; 
+    transform: scale(1.1);
+}
+
+.content {
+    display: flex; 
+    align-items: center; 
+    gap: 90px; 
+    margin-top: -200px;
+}
+
+img {
+    height: 320px;
+    width: 459px;
+    top: 272px;
+    left: 925px;
+    margin-bottom: -30px;
+}
+
+footer {  
+    padding: 20px;  
+    text-align: center; 
+    background: linear-gradient(to right, rgb(253, 91, 118) 50%, #ffffff 50%);
+}  
+
+.social-icons {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: flex; 
+    align-items: center; 
+    position: relative;
+}
+
+.social-icons img {  
+    width: 40px; 
+    height: 40px;  
+    transition: transform 0.3s; 
+    z-index: 1;
+}  
+
+.social-icons a:not(:nth-last-child(-n+2))::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d2cfcf;
+    z-index: 0;
+}
+
+.social-icons img:hover {  
+    transform: scale(1.1);
+}
+
